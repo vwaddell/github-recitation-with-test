@@ -8,10 +8,10 @@ Negative numbers should return None
 def fibonacci(position):
   if(position == 0 or position == 1):
     return position
-    
-  return fibonacci(position - 1) + fibonacci(position - 2)
-  "rahul code"
+  if(position < 0):
+    return None
 
+  return fibonacci(position - 1) + fibonacci(position - 2)
 
 
 
